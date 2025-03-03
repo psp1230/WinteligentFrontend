@@ -202,7 +202,7 @@ body {
 
 .service-tags span {
   color      : #3C3C3C;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .database-tags {
@@ -218,7 +218,7 @@ body {
 
 .database-tags span {
   color      : #3C3C3C;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
