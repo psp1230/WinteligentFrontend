@@ -137,7 +137,7 @@ body {
 
 .service-section {
   display         : flex;
-  align-items     : flex-start;
+  align-items     : stretch;
   gap             : 20px;
   background-color: #ebfffb;
   padding         : 20px;
@@ -147,7 +147,7 @@ body {
 
 .database-section {
   display         : flex;
-  align-items     : flex-start;
+  align-items     : stretch;
   gap             : 20px;
   background-color: #ebfffb;
   padding         : 20px;
@@ -161,12 +161,20 @@ body {
 
 .service-image img {
   width        : 100%;
-  height       : auto;
+  height       : 100%;
   border-radius: 0px;
 }
 
+.service-container {
+  width          : 100%;
+  flex-direction : column;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
 .service-content {
-  flex: 1;
+  max-width: 600px;
 }
 
 .service-title {
@@ -226,6 +234,16 @@ body {
 
   .service-image {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .service-content {
+    max-width: 685px;
+  }
+
+  .service-description {
+    font-size: 18px;
   }
 }
 
@@ -377,12 +395,12 @@ body {
 }
 
 .intro-section {
-  display          : flex;
-  align-items      : stretch;
-  gap              : 30px;
-  padding          : 20px;
-  /* max-width     : 1200px; */
-  /* margin        : 0 auto; */
+  display             : flex;
+  align-items         : stretch;
+  gap                 : 30px;
+  /* padding          : 20px; */
+  /* max-width        : 1200px; */
+  /* margin           : 0 auto; */
 }
 
 .intro-image {
@@ -411,23 +429,26 @@ body {
 
 .intro-image img {
   width           : 100%;
-  height          : auto;
-  border-radius   : 60px;
+  height          : 100%;
   /* box-shadow   : 0 5px 15px rgba(0, 0, 0, 0.2); */
 }
 
-.intro-content {
+.intro-container {
+  width          : 100%;
   display        : flex;
-  flex           : 1;
   flex-direction : column;
   justify-content: center;
   align-items    : center;
-  padding        : 20px 60px;
-  max-width      : 600px;
+}
+
+.intro-content {
+  /* padding  : 20px 60px; */
+  max-width: 565px;
 }
 
 .intro-text {
   color        : #333;
+  font-size    : 16px;
   line-height  : 1.8;
   margin-bottom: 15px;
 }
@@ -439,5 +460,15 @@ body {
 
   .intro-image {
     flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro-content {
+    max-width: 630px;
+  }
+
+  .intro-text {
+    font-size: 18px;
   }
 }
