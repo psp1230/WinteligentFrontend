@@ -183,6 +183,14 @@ body {
   border-radius: 0px;
 }
 
+.database-image-mobile {
+  display: none;
+}
+
+.database-image-pc {
+  display: block;
+}
+
 .service-container {
   width          : 100%;
   flex-direction : column;
@@ -240,6 +248,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .section-text {
+    padding: 0;
+  }
+
   .service-section {
     flex-direction: column;
     padding       : 20px;
@@ -252,6 +264,14 @@ body {
 
   .service-image {
     max-width: 100%;
+  }
+
+  .database-image-mobile {
+    display: block;
+  }
+
+  .database-image-pc {
+    display: none;
   }
 }
 
@@ -481,7 +501,7 @@ body {
   }
 
   .intro-content {
-    max-width: 350px;
+    max-width: 460px;
   }
 }
 
