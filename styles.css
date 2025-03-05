@@ -42,9 +42,9 @@ body {
   }
 
   .hero img {
-    width: 400px;
-    top  : 4%;
-    right: 0;
+    width    : 250px;
+    top      : 4%;
+    right    : 0;
     transform: translate(0, -4%);
   }
 
