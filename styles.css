@@ -479,6 +479,10 @@ body {
   .intro-image {
     flex: 0 0 100%;
   }
+
+  .intro-content {
+    max-width: 350px;
+  }
 }
 
 @media (min-width: 1000px) {
