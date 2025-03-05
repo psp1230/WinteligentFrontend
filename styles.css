@@ -18,19 +18,36 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image   : url('./assets/Wintellgent\ x\ Oracle.jpg');
+  background-image   : url('./assets/Wintellgent\ \ \(logo\).png');
   background-size    : cover;
   background-position: center;
   color              : white;
   padding            : 100px 0;
   position           : relative;
-  height             : 500px;
+  height             : 550px;
 }
 
 .hero img {
-  width  : 100%;
-  height : auto;
-  display: block;
+  width   : 550px;
+  height  : auto;
+  display : block;
+  position: absolute;
+  top     : 4%;
+  right   : 0.5%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero img {
+    width: 400px;
+    top  : 4%;
+    right: 0;
+    transform: translate(0, -4%);
+  }
+
 }
 
 .hero-content {
