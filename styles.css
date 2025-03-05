@@ -505,6 +505,25 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .intro-content {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 414px) {
+  .intro-content {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .intro-content {
+    max-width: 330px;
+  }
+}
+
 @media (min-width: 1000px) {
   .intro-content {
     max-width: 630px;
