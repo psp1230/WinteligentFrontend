@@ -168,6 +168,23 @@
       </div>
     </div>
   </footer>
+  <div id="chat"></div>
+
+  <!-- 如果外部化 React/ReactDOM，务必先加载它们 -->
+  <script src="https://unpkg.com/kms-chat@1.1.1/dist/chat-widget.umd.js"></script>
+  <script>
+    const config = {
+      apiKey:
+        "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1VRaU9pSnplWE4wWlcwaUxDSnphMmxzYkVsRUlqb2lPVEZrTmpVNFpERXRNbVJtTkMwME1EaGtMVGs0T0dNdE5UYzJZamhpTURFelpUTmtJbjAuVVVrekJSODJndDZHSHlXaWlscmpuMnRJNUNUQ0sxR0dkVHMyWnhKdW1OVQ",
+      baseUrl: 'https://wikms-dev.wiadvance.com'
+
+    }
+    console.log(window)
+    ChatWidget.initChat(document.getElementById('chat'), {
+      ...config,
+    });
+  </script>
+  </script>
 
   <script>
     // 滑入特效實現
