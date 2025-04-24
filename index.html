@@ -171,7 +171,7 @@
   <div id="chat"></div>
 
   <!-- 如果外部化 React/ReactDOM，务必先加载它们 -->
-  <script src="https://unpkg.com/kms-chat@1.1.3/dist/chat-widget.umd.js"></script>
+  <script src="https://unpkg.com/kms-chat@1.1.4/dist/chat-widget.umd.js"></script>
   <script>
     const config = {
       apiKey:
@@ -179,7 +179,6 @@
       baseUrl: 'https://wikms-dev.wiadvance.com/api'
 
     }
-    console.log(window)
     ChatWidget.initChat(document.getElementById('chat'), {
       ...config,
     });
